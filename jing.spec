@@ -5,10 +5,12 @@ Version:	20091111
 Release:	1
 License:	BSD
 Group:		Applications/Text
-#Source0Download: http://code.google.com/p/jing-trang/downloads/list
+#Source0Download: https://github.com/relaxng/jing-trang/releases
+# TODO: https://github.com/relaxng/jing-trang/releases/download/V20181204/jing-20181204.zip
+#Source0:	https://github.com/relaxng/jing-trang/archive/V%{version}/%{name}-%{version}.tar.gz
 Source0:	http://jing-trang.googlecode.com/files/%{name}-%{version}.zip
 # Source0-md5:	13eef193921409a1636377d1efbf9843
-URL:		http://code.google.com/p/jing-trang/
+URL:		https://github.com/relaxng/jing-trang
 Requires:	java-isorelax >= 20041111
 Requires:	java-xerces >= 2.9.1
 Requires:	jre
