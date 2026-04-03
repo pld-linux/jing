@@ -2,7 +2,7 @@ Summary:	Application for validating XML document against a RELAX NG schema
 Summary(pl.UTF-8):	Aplikacja do sprawdzania poprawności dokumentu XML względem schematu RELAX NG
 Name:		jing
 Version:	20091111
-Release:	1
+Release:	2
 License:	BSD
 Group:		Applications/Text
 #Source0Download: https://github.com/relaxng/jing-trang/releases
