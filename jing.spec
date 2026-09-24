@@ -2,7 +2,7 @@ Summary:	Application for validating XML document against a RELAX NG schema
 Summary(pl.UTF-8):	Aplikacja do sprawdzania poprawności dokumentu XML względem schematu RELAX NG
 Name:		jing
 Version:	20091111
-Release:	3
+Release:	4
 License:	BSD
 Group:		Applications/Text
 #Source0Download: https://github.com/relaxng/jing-trang/releases
@@ -13,7 +13,7 @@ Source0:	http://jing-trang.googlecode.com/files/%{name}-%{version}.zip
 URL:		https://github.com/relaxng/jing-trang
 Requires:	java-isorelax >= 20041111
 Requires:	java-xerces >= 2.9.1
-Requires:	jpackage-utils
+Requires:	jpackage-utils >= 1.7.5-16
 Requires:	saxon >= 6.5.5
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -40,6 +40,8 @@ cat >$RPM_BUILD_ROOT%{_bindir}/jing <<'EOF'
 #!/bin/sh
 
 . /usr/share/java-utils/java-functions
+
+set_jvm 5
 
 "$JAVA_HOME/bin/java" -jar %{_javadir}/jing.jar "$@"
 EOF
